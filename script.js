@@ -12,19 +12,11 @@ let diceDom = document.querySelector(`.dice`);
 let btnNew = document.querySelector(`.btn--new`);
 let btnRoll = document.querySelector(`.btn--roll`);
 let btnHold = document.querySelector(`.btn--hold`);
-const modal = document.querySelector('.modal');
-const overlay = document.querySelector('.overlay');
-const modalClose = document.querySelector('.modalClose');
+
 ///////////////////////////////////////////////
 let score, activePlayer, playing, current;
-function toggleModal() {
-  modal.classList.toggle(`hidden`);
-  overlay.classList.toggle(`hidden`);
-}
 
 let init = function () {
-  toggleModal();
-  modalClose.addEventListener(`click`, toggleModal.bind(this));
   current = 0;
   score = [0, 0];
   activePlayer = 0;
@@ -78,7 +70,7 @@ btnHold.addEventListener(`click`, function () {
     document.getElementById(`score--${activePlayer}`).textContent =
       score[activePlayer];
     document.getElementById(`current--${activePlayer}`).textContent = 0;
-    if (score[activePlayer] >= 30) {
+    if (score[activePlayer] >= 50) {
       winner();
     }
     switchPlayer();
