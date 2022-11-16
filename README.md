@@ -9,4 +9,4 @@
 🏆The first player on getting to 50 wins
 
 Try it out on Desktop 😉:
-https://one-on-one-emmanuelpl.netlify.app/
+https://one-on-one-game-emmanuelpl.netlify.app/
