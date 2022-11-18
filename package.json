@@ -1,15 +1,27 @@
 {
-  "name": "guess-the-number",
+  "name": "one-on-one-game",
   "version": "1.0.0",
+  "description": "2 Players Game App.",
   "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist"
   },
-  "author": "Emmanuel",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmopl97/one-on-one-game.git"
+  },
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmopl97/one-on-one-game/issues"
+  },
+  "homepage": "https://github.com/emmopl97/one-on-one-game#readme",
   "devDependencies": {
     "parcel": "^2.8.0"
   },
-  "description": ""
+  "dependencies": {
+    "core-js": "^3.26.1",
+    "regenerator-runtime": "^0.13.11"
+  }
 }
