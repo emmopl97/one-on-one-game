@@ -53,7 +53,7 @@ btnRoll.addEventListener(`click`, function () {
   if (playing) {
     let dice = Math.trunc(Math.random() * 6) + 1;
     diceDom.classList.remove(`hidden`);
-    diceDom.src = `dice-${dice}.png`;
+    diceDom.src = `https://raw.githubusercontent.com/emmopl97/one-on-one-game/master/dice-${dice}.png`;
     if (dice !== 1) {
       current = current + dice;
       document.getElementById(`current--${activePlayer}`).textContent = current;
